@@ -1,0 +1,19 @@
+{
+  "name": "nasa_20110087",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "install": "npm run install-server && npm run install-client",
+    "server": "npm run watch --prefix server",
+    "client": "npm start --prefix client",
+    "watch": "npm run server & npm run client",
+    "deploy": "npm run build --prefix client && npm start --prefix server",
+    "test": "cd server && npm run test && cd client && npm run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
